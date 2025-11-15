@@ -97,36 +97,21 @@
 </head>
 <body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
 <section id="contact">
     <h2>Contact Me</h2>
     <p>Have a question or want to work together? Send me a message!</p>
 
-    <?php
-    $message_sent = false;
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = strip_tags(trim($_POST["name"]));
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $message = trim($_POST["message"]);
-
-        $to = "your-email@example.com"; // Replace with your email
-        $subject = "New Contact Message from $name";
-        $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-        $headers = "From: $email";
-
-        if (mail($to, $subject, $body, $headers)) {
-            $message_sent = true;
-        } else {
-            echo "<p style='color:red;'>Oops! Something went wrong. Try again.</p>";
-        }
-    }
-
-    if ($message_sent) {
-        echo "<p style='color:#f39c12; font-size:18px; margin-bottom:20px;'>Thank you! Your message has been sent.</p>";
-    }
-    ?>
-
-    <form action="" method="POST">
+    <form action="contact.php" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
@@ -137,19 +122,6 @@
 </body>
 </html>
 
-
-
-
-
-
-
-    <!-- LinkedIn Button placed correctly -->
-    <a href="https://www.linkedin.com/in/naeem2244?utm_source=share_via&utm_content=profile&utm_medium=member-android" 
-       target="_blank" 
-       class="linkedin-btn">
-        🔗 Connect on LinkedIn
-    </a>
-</
 
 
        
@@ -171,6 +143,7 @@
 
 </body>
 </html>
+
 
 
 

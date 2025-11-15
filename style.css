@@ -179,11 +179,11 @@ nav a:hover {
     text-align: left;
 }
 
-/* WhatsApp Button */
-.whatsapp-btn {
+/* LinkedIn Button */
+.linkedin-btn {
     display: inline-block;
     margin-top: 20px;
-    background: #25D366;
+    background: #0077B5;
     color: white;
     padding: 12px 20px;
     border-radius: 30px;
@@ -193,10 +193,11 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.whatsapp-btn:hover {
-    background: #1ebe5d;
+.linkedin-btn:hover {
+    background: #005f8d;
     transform: scale(1.05);
 }
+
 
 /* Fade animation */
 @keyframes fadeIn {
@@ -222,4 +223,5 @@ nav a:hover {
         gap: 10px;
     }
 }
+
 

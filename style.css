@@ -139,45 +139,108 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-/* CONTACT SECTION */
+/* CONTACT FORM BOX */
 .contact-section {
-    text-align: center;
-    padding: 60px 20px;
-    animation: fadeIn 1.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 80%;
+.contact-box {
+    background: #0b1220;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.contact-box h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #38bdf8;
+}
+
+.contact-box p {
+    color: #c7c7c7;
+    margin-bottom: 25px;
+}
+
+/* Inline fields */
+.inline-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.inline-inputs input {
+    flex: 1;
+}
+
+/* Inputs General */
+.contact-box input,
+.contact-box select,
+.contact-box textarea {
+    width: 100%;
     padding: 12px;
-    margin: 10px 0;
     border-radius: 8px;
-    border: 1px solid #888;
-    font-size: 16px;
+    background: #0f1724;
+    color: white;
+    border: 2px solid #1e293b;
+    margin-bottom: 15px;
     transition: 0.3s;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #008cff;
-    box-shadow: 0 0 8px rgba(0, 140, 255, 0.4);
+.contact-box input:focus,
+.contact-box select:focus,
+.contact-box textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(56,189,248,0.4);
 }
 
-.saved-messages {
-    margin-top: 25px;
-    padding: 10px;
-    background: #f3f3f3;
+/* BUTTONS */
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.home-btn {
+    padding: 12px 20px;
+    background: #1e293b;
+    border: none;
     border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.saved-message-box {
-    background: white;
-    padding: 10px;
-    margin: 8px 0;
-    border-left: 4px solid #008cff;
-    border-radius: 6px;
-    text-align: left;
+.home-btn:hover {
+    background: #334155;
 }
+
+.send-btn {
+    padding: 12px 25px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .inline-inputs {
+        flex-direction: column;
+    }
+}
+
 
 /* LinkedIn Button */
 .linkedin-btn {
@@ -230,6 +293,7 @@ footer {
         gap: 10px;
     }
 }
+
 
 
 

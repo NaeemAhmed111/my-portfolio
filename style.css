@@ -181,8 +181,9 @@ nav a:hover {
 
 /* LinkedIn Button */
 .linkedin-btn {
-    display: inline-block;
-    margin-top: 20px;
+    display: block;              /* FIX: Always on new line */
+    width: fit-content;
+    margin: 20px auto;           /* Center the button */
     background: #0077B5;
     color: white;
     padding: 12px 20px;
@@ -198,13 +199,19 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+/* Footer Fix — force © 2025 on a new line */
+footer {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
 
 /* Fade animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
@@ -223,5 +230,7 @@ nav a:hover {
         gap: 10px;
     }
 }
+
+
 
 

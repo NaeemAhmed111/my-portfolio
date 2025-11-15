@@ -82,14 +82,13 @@
         <h2>Contact Me</h2>
         <p>Feel free to send me a message anytime!</p>
 
-        <!-- Form starts -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form id="contactForm">
             <div class="inline-inputs">
-                <input type="text" name="name" placeholder="Full Name" required />
-                <input type="email" name="email" placeholder="Email Address" required />
+                <input type="text" id="name" placeholder="Full Name" required />
+                <input type="email" id="email" placeholder="Email Address" required />
             </div>
 
-            <select name="subject" required>
+            <select id="subject" required>
                 <option value="" disabled selected>Choose Subject</option>
                 <option>Portfolio Inquiry</option>
                 <option>Video Editing</option>
@@ -97,15 +96,25 @@
                 <option>Other</option>
             </select>
 
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
 
             <div class="btn-row">
                 <button type="submit" class="send-btn">Submit Now</button>
             </div>
         </form>
-        <!-- Form ends -->
     </div>
 </section>
+
+<script>
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); // page reload nahi hoga
+    alert('Your message has been submitted successfully!');
+    form.reset(); // form fields clear ho jayenge
+});
+</script>
+
 
 
 
@@ -138,6 +147,7 @@
 
 </body>
 </html>
+
 
 
 

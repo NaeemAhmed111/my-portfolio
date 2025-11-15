@@ -77,19 +77,31 @@
         </div>
     </section>
 
-<section id="contact" class="contact-section">
-    <div class="contact-box">
-        <h2>Contact Me</h2>
-        <p>Feel free to send me a message anytime!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
 
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a question or want to work together? Send me a message!</p>
+
+    <form action="contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 </section>
+
+</body>
+</html>
+
 
 
 
@@ -123,6 +135,7 @@
 
 </body>
 </html>
+
 
 
 

@@ -139,36 +139,7 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-/* remove home-btn CSS, keep send-btn CSS as is */
-.btn-row {
-    display: flex;
-    justify-content: center; /* center single button */
-    margin-top: 15px;
-}
-
-.send-btn {
-    flex: 1;               /* full width */
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    background: #38bdf8;
-    border: none;
-    color: black;
-}
-
-.send-btn:hover {
-    opacity: 0.85;
-    transform: scale(1.04);
-}
-
-
-/* Mobile */
-@media (max-width: 600px) {
-    .inline-inputs {
-        flex-direction: column;
-    }
-}
+/* remove home-btn CSS, keep send-btn CSS as is */ .btn-row { display: flex; justify-content: center; /* center single button */ margin-top: 15px; } .send-btn { flex: 1; /* full width */ padding: 12px 20px; border-radius: 12px; font-weight: bold; cursor: pointer; background: #38bdf8; border: none; color: black; } .send-btn:hover { opacity: 0.85; transform: scale(1.04); } /* Mobile */ @media (max-width: 600px) { .inline-inputs { flex-direction: column; } }
 
 
 
@@ -223,6 +194,7 @@ footer {
         gap: 10px;
     }
 }
+
 
 
 

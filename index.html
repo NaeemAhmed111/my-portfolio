@@ -78,15 +78,35 @@
     </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="section">
-    <h2>Contact Me</h2>
+<section id="contact" class="contact-section">
+    <div class="contact-box">
+        <h2>Contact Form</h2>
+        <p>If you want to contact me, just fill the form below.</p>
 
-    <form onsubmit="sendMessage(event)">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
-        <button class="btn" type="submit">Send</button>
-    </form>
+        <form id="contactForm">
+            <div class="inline-inputs">
+                <input type="text" id="name" placeholder="Full Name" required />
+                <input type="email" id="email" placeholder="Email Address" required />
+            </div>
+
+            <select id="subject" required>
+                <option value="">Choose Subject</option>
+                <option value="web">Web Development</option>
+                <option value="graphic">Graphic Design</option>
+                <option value="logo">Logo Design</option>
+                <option value="other">Other</option>
+            </select>
+
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <div class="btn-row">
+                <button type="button" class="home-btn" onclick="window.location='#'">Back to Home</button>
+                <button type="submit" class="send-btn">Submit Now</button>
+            </div>
+        </form>
+    </div>
+</section>
+
 
     <!-- LinkedIn Button placed correctly -->
     <a href="https://www.linkedin.com/in/naeem2244?utm_source=share_via&utm_content=profile&utm_medium=member-android" 
@@ -116,6 +136,7 @@
 
 </body>
 </html>
+
 
 
 

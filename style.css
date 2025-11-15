@@ -139,40 +139,71 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-/* CONTACT FORM */
-form input, form textarea {
-    width: 100%;
-    padding: 12px;
-    background: transparent;
-    border: 1px solid var(--primary);
-    color: #fff;
-    border-radius: 6px;
-    margin-bottom: 12px;
-}
-
-form button {
-    width: 130px;
-    background: var(--primary);
-    border: none;
-    padding: 12px;
-    color: #000;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-form button:hover {
-    background: var(--secondary);
-    color: #fff;
-}
-
-/* FOOTER */
-footer {
+/* CONTACT SECTION */
+.contact-section {
     text-align: center;
-    padding: 20px;
-    background: #0b1220;
-    color: #aaa;
-    margin-top: 20px;
+    padding: 60px 20px;
+    animation: fadeIn 1.2s ease-in-out;
 }
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #888;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #008cff;
+    box-shadow: 0 0 8px rgba(0, 140, 255, 0.4);
+}
+
+.saved-messages {
+    margin-top: 25px;
+    padding: 10px;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+.saved-message-box {
+    background: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-left: 4px solid #008cff;
+    border-radius: 6px;
+    text-align: left;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
@@ -191,3 +222,4 @@ footer {
         gap: 10px;
     }
 }
+

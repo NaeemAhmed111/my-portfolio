@@ -174,42 +174,47 @@ body {
     color: #ccc;
 }
 
-/* Form Styles */
-#contact form {
+/* Contact Section */
+#contact {
     max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
 }
 
-#contact input,
-#contact textarea {
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+/* Section Title */
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f39c12; /* Gold accent */
 }
 
-#contact textarea {
-    resize: none;
-}
-
-/* Button Styles */
-#contact button {
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background: #f39c12;
-    color: #111;
+#contact p {
     font-size: 18px;
-    cursor: pointer;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* LinkedIn Button */
+#contact a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0077B5; /* LinkedIn Blue */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-#contact button:hover {
-    background: #e67e22;
+#contact a:hover {
+    background-color: #005983; /* Darker LinkedIn Blue on hover */
 }
+
 
 
 
@@ -265,6 +270,7 @@ footer {
         gap: 10px;
     }
 }
+
 
 
 

@@ -147,6 +147,14 @@ body {
     color: #fff;
 }
 
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
 /* Contact Section */
 #contact {
     padding: 50px 20px;
@@ -205,6 +213,7 @@ body {
 
 
 
+
 /* LinkedIn Button */
 .linkedin-btn {
     display: block;              /* FIX: Always on new line */
@@ -256,6 +265,7 @@ footer {
         gap: 10px;
     }
 }
+
 
 
 

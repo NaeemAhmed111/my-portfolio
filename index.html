@@ -77,35 +77,33 @@
         </div>
     </section>
 
-<!-- CONTACT SECTION -->
 <section id="contact" class="contact-section">
     <div class="contact-box">
-        <h2>Contact Form</h2>
-        <p>If you want to contact me, just fill the form below.</p>
+        <h2>Contact Me</h2>
+        <p>Feel free to send me a message anytime!</p>
 
-        <form id="contactForm">
-            <div class="inline-inputs">
-                <input type="text" id="name" placeholder="Full Name" required />
-                <input type="email" id="email" placeholder="Email Address" required />
-            </div>
+        <div class="inline-inputs">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="email" id="email" placeholder="Email Address" required />
+        </div>
 
-            <select id="subject" required>
-                <option value="">Choose Subject</option>
-                <option value="web">Web Development</option>
-                <option value="graphic">Graphic Design</option>
-                <option value="logo">Logo Design</option>
-                <option value="other">Other</option>
-            </select>
+        <select id="subject" required>
+            <option value="" disabled selected>Choose Subject</option>
+            <option>Portfolio Inquiry</option>
+            <option>Video Editing</option>
+            <option>Web Development</option>
+            <option>Other</option>
+        </select>
 
-            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
 
-            <div class="btn-row">
-                <button type="button" class="home-btn" onclick="window.location='#'">Back to Home</button>
-                <button type="submit" class="send-btn">Submit Now</button>
-            </div>
-        </form>
+        <div class="btn-row">
+            <button class="home-btn" onclick="window.location.href='#home'">Back to Home</button>
+            <button class="send-btn" onclick="saveMessage()">Submit Now</button>
+        </div>
     </div>
 </section>
+
 
 
     <!-- LinkedIn Button placed correctly -->
@@ -136,6 +134,7 @@
 
 </body>
 </html>
+
 
 
 

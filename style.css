@@ -143,34 +143,38 @@ nav a:hover {
 .contact-section {
     display: flex;
     justify-content: center;
-    padding: 50px 20px;
+    align-items: center;   /* vertical center */
+    padding: 60px 20px;
+    text-align: center;    /* center align all text */
 }
 
 .contact-box {
     background: #0b1220;
-    padding: 30px;
+    padding: 40px;         /* more padding */
     width: 90%;
     max-width: 600px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.45);
     animation: fadeIn 0.8s ease-in-out;
 }
 
+/* Gap adjust */
 .contact-box h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 32px;
     color: #38bdf8;
 }
 
 .contact-box p {
     color: #c7c7c7;
-    margin-bottom: 25px;
+    margin-bottom: 30px;   /* more gap below text */
 }
 
-/* Inline fields */
+/* inline inputs */
 .inline-inputs {
     display: flex;
-    gap: 10px;
+    gap: 15px;             /* more gap between inputs */
+    margin-bottom: 15px;
 }
 
 .inline-inputs input {
@@ -182,12 +186,13 @@ nav a:hover {
 .contact-box select,
 .contact-box textarea {
     width: 100%;
-    padding: 12px;
-    border-radius: 8px;
+    padding: 14px;
+    border-radius: 10px;
     background: #0f1724;
     color: white;
     border: 2px solid #1e293b;
-    margin-bottom: 15px;
+    margin-bottom: 18px;   /* extra spacing */
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -195,51 +200,56 @@ nav a:hover {
 .contact-box select:focus,
 .contact-box textarea:focus {
     border-color: #38bdf8;
-    box-shadow: 0 0 10px rgba(56,189,248,0.4);
+    box-shadow: 0 0 12px rgba(56,189,248,0.4);
 }
 
 /* BUTTONS */
 .btn-row {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    gap: 10px;             /* add gap between buttons */
+    margin-top: 15px;
 }
 
-.home-btn {
+.home-btn,
+.send-btn {
+    flex: 1;               /* same width */
     padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Home Button */
+.home-btn {
     background: #1e293b;
     border: none;
-    border-radius: 10px;
     color: white;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
 .home-btn:hover {
     background: #334155;
 }
 
+/* Send Button */
 .send-btn {
-    padding: 12px 25px;
     background: #38bdf8;
     border: none;
-    border-radius: 10px;
     color: black;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
 .send-btn:hover {
-    opacity: 0.8;
-    transform: scale(1.03);
+    opacity: 0.85;
+    transform: scale(1.04);
 }
 
-/* Mobile Responsive */
+/* Mobile */
 @media (max-width: 600px) {
     .inline-inputs {
         flex-direction: column;
     }
 }
+
 
 
 /* LinkedIn Button */
@@ -293,6 +303,7 @@ footer {
         gap: 10px;
     }
 }
+
 
 
 

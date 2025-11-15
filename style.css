@@ -139,100 +139,19 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-/* CONTACT FORM BOX */
-.contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;   /* vertical center */
-    padding: 60px 20px;
-    text-align: center;    /* center align all text */
-}
-
-.contact-box {
-    background: #0b1220;
-    padding: 40px;         /* more padding */
-    width: 90%;
-    max-width: 600px;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.45);
-    animation: fadeIn 0.8s ease-in-out;
-}
-
-/* Gap adjust */
-.contact-box h2 {
-    margin-bottom: 12px;
-    font-size: 32px;
-    color: #38bdf8;
-}
-
-.contact-box p {
-    color: #c7c7c7;
-    margin-bottom: 30px;   /* more gap below text */
-}
-
-/* inline inputs */
-.inline-inputs {
-    display: flex;
-    gap: 15px;             /* more gap between inputs */
-    margin-bottom: 15px;
-}
-
-.inline-inputs input {
-    flex: 1;
-}
-
-/* Inputs General */
-.contact-box input,
-.contact-box select,
-.contact-box textarea {
-    width: 100%;
-    padding: 14px;
-    border-radius: 10px;
-    background: #0f1724;
-    color: white;
-    border: 2px solid #1e293b;
-    margin-bottom: 18px;   /* extra spacing */
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.contact-box input:focus,
-.contact-box select:focus,
-.contact-box textarea:focus {
-    border-color: #38bdf8;
-    box-shadow: 0 0 12px rgba(56,189,248,0.4);
-}
-
-/* BUTTONS */
+/* remove home-btn CSS, keep send-btn CSS as is */
 .btn-row {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;             /* add gap between buttons */
+    justify-content: center; /* center single button */
     margin-top: 15px;
 }
 
-.home-btn,
 .send-btn {
-    flex: 1;               /* same width */
+    flex: 1;               /* full width */
     padding: 12px 20px;
     border-radius: 12px;
     font-weight: bold;
     cursor: pointer;
-}
-
-/* Home Button */
-.home-btn {
-    background: #1e293b;
-    border: none;
-    color: white;
-}
-
-.home-btn:hover {
-    background: #334155;
-}
-
-/* Send Button */
-.send-btn {
     background: #38bdf8;
     border: none;
     color: black;
@@ -242,6 +161,7 @@ nav a:hover {
     opacity: 0.85;
     transform: scale(1.04);
 }
+
 
 /* Mobile */
 @media (max-width: 600px) {
@@ -303,6 +223,7 @@ footer {
         gap: 10px;
     }
 }
+
 
 
 
